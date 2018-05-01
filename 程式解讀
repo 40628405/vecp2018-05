@@ -1,32 +1,32 @@
---功能 度數2度
+--功能 度數是2度
 function deg2rad(deg)
---返回180度
+--往返180度
 return deg*math.pi/180
 --結束  
 end
---功能 度數2度
+--功能 度數是2度
 function deg2rad(deg)
---返回每180度1pi
+--往返每180度1pi
 return rad*180/math.pi
 --結束
 end
 --功能 函數(函數)
 function nullFunc(arg)
---返回函數
+--往返函數
 return arg
 --結束
 end
---功能 切換弧度(ui,id,newVal)
+--功能 切換到弧度(ui,id,newVal)
 function toggleRadians(ui,id,newVal)
 --如果(新文件==2)那麼
 if (newVal==2) then
 --角度從弧度2度
 angleTo = deg2rad
---變成每弧度2度
+--切換成每弧度2度
 angleFrom = rad2deg
---也就是
+--也就是說
 else
---角度從空值地函數
+--角度從空值的函數
 angleTo = nullFunc
 --變成空值的函數
 angleFrom = nullFunc
@@ -54,7 +54,7 @@ angles={0,0,0,0,0,0,0,0}
 simSetJointPosition(jointHandles[i],joints[i])
 --結束
 end
---返回角度
+--往返角度
 return angles
 --結束
 end
